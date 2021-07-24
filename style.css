@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1em;
+}
+body {
+  height: 100vh;
+}
+h1{
+  font-size: 1.6em;
+}
+.container {
+  position: relative;
+  width: 500px;
+
+  margin: auto;
+  padding: 2rem 2rem 2rem 3rem;
+  background-color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.operations,
+.number {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.operations div,
+.number div {
+  border: 1px solid black;
+  width: 4rem;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.operations div:hover,
+.number div:hover {
+  transform: scale(1.1);
+}
+div.equal {
+  position: absolute;
+  left: 20.6rem;
+  height: 11.5rem;
+}
+input {
+  background-color: white;
+  border: none;
+  width: 21.7rem;
+  height: 30px;
+  text-align: right;
+}
+#input-calc{
+  font-size: .6em;
+}
